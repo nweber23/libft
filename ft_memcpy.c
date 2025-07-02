@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nweber <nweber@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 17:54:56 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/01 17:54:56 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/02 11:18:31 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	i = 0;
 	dest_ptr = (unsigned char *)dest;
 	src_ptr = (const unsigned char *)src;
-	while(i < n)
+	while (i < n)
 	{
 		dest_ptr[i] = src_ptr[i];
 		i++;
