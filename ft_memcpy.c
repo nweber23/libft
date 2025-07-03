@@ -6,24 +6,26 @@
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 17:54:56 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/02 11:18:31 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/03 14:59:56 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *restrict dest, const void *restrict src, size_t n)
 {
-	unsigned char		*dest_ptr;
-	const unsigned char	*src_ptr;
+	unsigned char		*d;
+	const unsigned char	*s;
 	size_t				i;
 
+	if (!dest && !src)
+		return (NULL);
+	d = (unsigned char *)dest;
+	s = (const unsigned char *)src;
 	i = 0;
-	dest_ptr = (unsigned char *)dest;
-	src_ptr = (const unsigned char *)src;
 	while (i < n)
 	{
-		dest_ptr[i] = src_ptr[i];
+		d[i] = s[i];
 		i++;
 	}
 	return (dest);
