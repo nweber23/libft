@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/02 12:20:22 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/03 14:15:32 by nweber           ###   ########.fr       */
+/*   Created: 2025/07/03 13:09:56 by nweber            #+#    #+#             */
+/*   Updated: 2025/07/03 13:23:03 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memchr(const void *s, int c, size_t n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	const unsigned char	*ptr;
-	size_t				i;
+	char	*substr;
 
-	ptr = (const unsigned char *)s;
-	i = 0;
-	while (i < n)
-	{
-		if (ptr[i] == (unsigned char)c)
-			return ((void *) ptr + i);
-		i++;
-	}
-	return (NULL);
+	if (!s || start + len > ft_strlen(s))
+		return (NULL);
+	substr = (char *)malloc(len + 1);
+	if (!substr)
+		return (NULL);
+	ft_strlcpy(substr, s + start, len + 1);
+	return (substr);
 }
