@@ -35,7 +35,7 @@ fclean: clean
 
 re: fclean all
 
-bonus: ${OBJS} ${BOBJS}
-	ar rcs ${NAME} ${OBJS} ${BOBJS}
+bonus: ${OBJS} ${BONUS_OBJS}
+	ar rcs ${NAME} ${OBJS} ${BONUS_OBJS}
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
