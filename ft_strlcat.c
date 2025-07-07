@@ -3,15 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nweber <nweber@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 20:14:07 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/01 20:14:07 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:20:36 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// returns the total length of the string it tried to create
+// appends dst to src
 size_t	ft_strlcat(char *dest, const char *src, size_t dstsize)
 {
 	size_t	d;

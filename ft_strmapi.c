@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nweber <nweber@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 17:46:46 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/03 17:46:46 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:23:14 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// applies the function f to the string and creates a new one
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 {
 	size_t	i;

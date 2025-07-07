@@ -6,12 +6,14 @@
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 15:29:00 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/03 15:34:51 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:26:18 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// allocates memory for a copy of s1 where the chars
+// from set are removed
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
@@ -31,6 +33,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	trimmed = (char *)malloc(len + 1);
 	if (!trimmed)
 		return (NULL);
-	ft_strlcpy(trimmed, s1 + start, len + 1);
+	ft_strlcpy(trimmed, s1 + start, len);
 	return (trimmed);
 }

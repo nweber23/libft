@@ -6,12 +6,14 @@
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 13:09:56 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/03 15:22:01 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:27:30 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// allocates memory for a substr that starts at start and goes
+// up to len bytes
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;

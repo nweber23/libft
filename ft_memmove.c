@@ -6,13 +6,14 @@
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 18:06:50 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/03 14:42:22 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:08:59 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+// copys len bytes from src into dest
+void	*ft_memmove(void *dest, const void *src, size_t len)
 {
 	unsigned char		*d;
 	const unsigned char	*s;
@@ -25,7 +26,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	if (d < s)
 	{
 		i = 0;
-		while (i < n)
+		while (i < len)
 		{
 			d[i] = s[i];
 			i++;
@@ -33,9 +34,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else
 	{
-		while (n-- > 0)
+		while (len-- > 0)
 		{
-			d[n] = s[n];
+			d[len] = s[len];
 		}
 	}
 	return (dest);

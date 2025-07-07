@@ -6,12 +6,13 @@
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 12:56:52 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/03 15:19:43 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:16:42 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// allocates memory for a copy of s1 and copys it
 char	*ft_strdup(const char *s1)
 {
 	char	*dest;

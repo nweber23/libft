@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nweber <nweber@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 20:29:32 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/01 20:29:32 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:28:03 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// turns lowercase letters into uppercase
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

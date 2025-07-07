@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nweber <nweber@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 17:00:48 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/01 17:00:48 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 12:41:24 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// checks if the input is printable
 int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);

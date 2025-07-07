@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nweber <nweber@student.42heilbronn.de>     +#+  +:+       +#+        */
+/*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/01 20:30:46 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/01 20:30:46 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:27:49 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+// turns uppercase letters into lowercase
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')

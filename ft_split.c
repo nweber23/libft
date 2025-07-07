@@ -6,12 +6,13 @@
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 15:40:11 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/03 16:37:33 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:12:52 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// splits a given str into multiple strings splitted by a char
 static int	count_words(const char *s, char c)
 {
 	size_t	i;

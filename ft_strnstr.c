@@ -6,12 +6,14 @@
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/02 13:40:54 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/04 12:41:35 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 13:25:01 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+// searches for the needle in the haystack and returns the first occurence
+// it only searches up to len bytes
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	len_needle;

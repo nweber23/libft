@@ -6,7 +6,7 @@
 /*   By: nweber <nweber@student.42Heilbronn.de>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 16:39:51 by nweber            #+#    #+#             */
-/*   Updated: 2025/07/03 17:03:58 by nweber           ###   ########.fr       */
+/*   Updated: 2025/07/07 12:47:48 by nweber           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ static int	get_digits(int n)
 	return (count);
 }
 
+// converts an int to a str with allocated memory
 char	*ft_itoa(int n)
 {
 	char	*str;
@@ -55,3 +56,9 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+// #include <stdio.h>
+// int main() {
+// 	printf("ft_itoa(0): %s\n", ft_itoa(0));
+// 	return 0;
+// }
