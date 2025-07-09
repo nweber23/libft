@@ -23,7 +23,7 @@
 
 1. **Clone the repository:**
    ```sh
-   git clone <repo-url>
+   git clone <https://github.com/nweber23/libft.git>
    cd libft
    ```
 
@@ -42,7 +42,7 @@
 ## Project Structure
 
 - `libft.h` — Header file with function prototypes.
-- `src/` — Source files for all implemented functions.
+- `*.c` — Source files for all implemented functions.
 - `Makefile` — Build instructions.
 
 ## License
